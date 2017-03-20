@@ -1,0 +1,48 @@
+<div class="padded row full-content bg-grayscale" style="padding:3%;overflow: auto;">
+    <div class="col-md-6 col-xs-6  login">
+        <a href="/" class="logo"><img src="/assets/images/coat_of_arms_small.png" alt="Logo" width="50"></a>
+        <h4>Welcome to pod.</h4>
+        <!--<a href="/login/fb" class="btn btn-lg btn-primary btn-block btn-facebook fb-login-btn">Login with FACEBOOK</a>
+        <p class="text-center" style="padding-top:15px;"><strong>or</strong></p>-->
+        <form ng-submit="register()" class="row" style="opacity:0.95">
+            <div class="row">
+                <div class="form-group col-md-12" ui-view="alerts"></div>
+
+            </div>
+            <div>
+                <div class="inner">
+                    <div class="form-group col-md-12">
+                        <label for="">First Name</label>
+                        <input required ng-model="user.fname" type="fname" class="form-control" placeholder="jane">
+                    </div>
+
+                    <div class="form-group col-md-12">
+                        <label for="">Email Address</label>
+                        <input required ng-model="user.email" type="email" class="form-control" placeholder="jane@mail.com">
+                    </div>
+
+                    <div class="form-group col-md-12">
+                        <label for="">Phone Address</label>
+                        <input required ng-model="user.email" type="email" class="form-control" placeholder="jane@mail.com">
+                    </div>
+
+
+                    <div class="btn-group col-md-12">
+                        <button type="button" ui-sref="register" class="col-md-12 btn btn-success">Register</button>
+                    </div>
+                    <div class="col-md-12"><a ui-sref="home" class="col-md-12 btn btn-danger"><i style="padding-right:10px" class="ion-earth"></i>Back to Website</a>
+                    </div>
+                </div>
+            </div>
+    </div>
+    </form>
+    <div ng-show="showError" class="animated fadeIn alert alert-{{error.type}}">
+        <span class="{{error.icon}}"></span>
+        <span ng-bind="error.message"></span>
+    </div>
+    <div ng-show="showSuccess" class="animated fadeIn alert alert-{{success.type}}">
+        <span class="{{success.icon}}"></span>
+        <span ng-bind="success.message"></span>
+    </div>
+</div>
+</div>

@@ -1,0 +1,28 @@
+<nav class="navbar navbar-fixed-top" id="navbar">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <div class="logo" style="">
+              <a ui-sref="home"><img style="display:inline-block;margin: 5px 0;float:left;" src="/assets/images/coat_of_arms_small.png" width="50"></a>
+
+              <a class="navbar-brand" ui-sref="home" style="display: inline-block;margin: 5px 0;">pod</a>
+
+          </div>
+
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+
+          <ul style="margin: 5px 0;" class="nav navbar-nav navbar-right">
+
+            <li class="active"><a ui-sref="login">Sign Up <span class="sr-only">(current)</span></a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+</nav>
+
+    <div ui-view="" class="content-container"></div>

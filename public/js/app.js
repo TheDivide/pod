@@ -198,7 +198,7 @@ angular.module('laravel_angular').factory('Requests', ['$http', '$rootScope', fu
   Requests.data = [];
   Requests.post_data = []
   var base_url = "http://api.epikenya.com/";
-  var img_url = "http://images.epikenya.org/";
+  //var img_url = "http://images.epikenya.org/";
   var url = null;
 
   /**
@@ -338,7 +338,6 @@ angular.module('module.home', []).controller('homeCtrl', [
         scope.responses = []
         scope.story = {};
         scope.stories = [];
-        scope.imgurl = 'http://static-hivisasa-com.s3-accelerate.amazonaws.com/';
 
         //getAll();
 

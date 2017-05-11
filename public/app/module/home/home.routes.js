@@ -6,8 +6,12 @@ angular.module('module.home').config(function($stateProvider, $urlRouterProvider
             '': {
                 templateUrl: VIEW._modules('home/home.main')
             },
-            '': {
+            'header@home': {
                 templateUrl: VIEW._modules('home/home.header')
+            },
+
+            'sidebar@home': {
+                templateUrl: VIEW._modules('home/home.sidebar')
             }
         }
     }).state('home.all', {
@@ -42,6 +46,16 @@ angular.module('module.home').config(function($stateProvider, $urlRouterProvider
     }).state('home.sports', {
         url: '/sports',
         templateUrl: VIEW._modules('home/sports.glimpse')
+
+    })
+    .state('home.dashboard', {
+        url: '/dashboard',
+        views:{
+          'content@home': {
+              templateUrl: VIEW._modules('home/home.dashboard')
+          }
+        }
+
 
     })
 });

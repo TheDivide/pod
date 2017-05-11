@@ -6,5 +6,5 @@
  * @param $urlRouterProvider {service}
  */
  angular.module("laravel_angular").config(function($stateProvider, $urlRouterProvider) {
-   $urlRouterProvider.otherwise("/home/all");
+   $urlRouterProvider.otherwise("/home/dashboard");
  });

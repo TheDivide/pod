@@ -38,14 +38,22 @@
 	<script src="libs/js/angular.js"></script>
     <script src="libs/js/lodash.compat.js"></script>
 	<title ng-bind="title"></title>
-
+	<link rel="stylesheet" type="text/css" href="assets/lib/stroke-7/style.css"/>
+	<link rel="stylesheet" type="text/css" href="assets/lib/jquery.nanoscroller/css/nanoscroller.css"/><!--[if lt IE 9]>
+	<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+	<link rel="stylesheet" type="text/css" href="assets/lib/theme-switcher/theme-switcher.min.css"/>
+	<link rel="stylesheet" type="text/css" href="assets/lib/jquery.vectormap/jquery-jvectormap-1.2.2.css"/>
+	<link type="text/css" href="assets/css/style.css" rel="stylesheet">
 	<!-- <link rel="stylesheet" href="dist/styles.css"> -->
 </head>
 <body>
-
+<div class="am-wrapper">
 <section ui-view>
 
 </section>
+</div>
 
 
 <!-- Footer -->
@@ -80,6 +88,30 @@
 <script src="libs/js/textAngular.js"></script>
 <script src="libs/js/socket.js"></script>
 <script src="libs/js/slick.js"></script>
+<script src="assets/lib/jquery/jquery.min.js" type="text/javascript"></script>
+<script src="assets/lib/jquery.nanoscroller/javascripts/jquery.nanoscroller.min.js" type="text/javascript"></script>
+<script src="assets/js/main.js" type="text/javascript"></script>
+<!-- <script src="assets/lib/bootstrap/dist/js/bootstrap.min.js" type="text/javascript"></script> -->
+<script src="assets/lib/theme-switcher/theme-switcher.min.js" type="text/javascript"></script>
+<script src="assets/lib/jquery-flot/jquery.flot.js" type="text/javascript"></script>
+<script src="assets/lib/jquery-flot/jquery.flot.pie.js" type="text/javascript"></script>
+<script src="assets/lib/jquery-flot/jquery.flot.resize.js" type="text/javascript"></script>
+<script src="assets/lib/jquery-flot/plugins/jquery.flot.orderBars.js" type="text/javascript"></script>
+<script src="assets/lib/jquery-flot/plugins/curvedLines.js" type="text/javascript"></script>
+<script src="assets/lib/jquery.sparkline/jquery.sparkline.min.js" type="text/javascript"></script>
+<script src="assets/lib/jquery-ui/jquery-ui.min.js" type="text/javascript"></script>
+<script src="assets/lib/jquery.vectormap/jquery-jvectormap-1.2.2.min.js" type="text/javascript"></script>
+<script src="assets/lib/jquery.vectormap/maps/jquery-jvectormap-us-merc-en.js" type="text/javascript"></script>
+<script src="assets/lib/jquery.vectormap/maps/jquery-jvectormap-world-mill-en.js" type="text/javascript"></script>
+<script src="assets/lib/jquery.vectormap/maps/jquery-jvectormap-uk-mill-en.js" type="text/javascript"></script>
+<script src="assets/lib/jquery.vectormap/maps/jquery-jvectormap-fr-merc-en.js" type="text/javascript"></script>
+<script src="assets/lib/jquery.vectormap/maps/jquery-jvectormap-us-il-chicago-mill-en.js" type="text/javascript"></script>
+<script src="assets/lib/jquery.vectormap/maps/jquery-jvectormap-au-mill-en.js" type="text/javascript"></script>
+<script src="assets/lib/jquery.vectormap/maps/jquery-jvectormap-in-mill-en.js" type="text/javascript"></script>
+<script src="assets/lib/jquery.vectormap/maps/jquery-jvectormap-map.js" type="text/javascript"></script>
+<script src="assets/lib/jquery.vectormap/maps/jquery-jvectormap-ca-lcc-en.js" type="text/javascript"></script>
+<script src="assets/lib/countup/countUp.min.js" type="text/javascript"></script>
+<script src="assets/lib/chartjs/Chart.min.js" type="text/javascript"></script>
 
 
 <script src="js/app.js"></script>

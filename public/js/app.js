@@ -120,7 +120,7 @@ angular.module("laravel_angular").directive('isActiveLink', ['$location', functi
  * @param $urlRouterProvider {service}
  */
  angular.module("laravel_angular").config(function($stateProvider, $urlRouterProvider) {
-   $urlRouterProvider.otherwise("/home/all");
+   $urlRouterProvider.otherwise("/home/dashboard");
  });
 
 angular.module("laravel_angular").factory('errorInterceptor', ['$q', '$log',
@@ -198,7 +198,7 @@ angular.module('laravel_angular').factory('Requests', ['$http', '$rootScope', fu
   Requests.data = [];
   Requests.post_data = []
   var base_url = "http://api.epikenya.com/";
-  var img_url = "http://images.epikenya.org/";
+  //var img_url = "http://images.epikenya.org/";
   var url = null;
 
   /**
@@ -338,7 +338,6 @@ angular.module('module.home', []).controller('homeCtrl', [
         scope.responses = []
         scope.story = {};
         scope.stories = [];
-        scope.imgurl = 'http://static-hivisasa-com.s3-accelerate.amazonaws.com/';
 
         //getAll();
 
@@ -393,8 +392,12 @@ angular.module('module.home').config(function($stateProvider, $urlRouterProvider
             '': {
                 templateUrl: VIEW._modules('home/home.main')
             },
-            '': {
+            'header@home': {
                 templateUrl: VIEW._modules('home/home.header')
+            },
+
+            'sidebar@home': {
+                templateUrl: VIEW._modules('home/home.sidebar')
             }
         }
     }).state('home.all', {
@@ -429,6 +432,16 @@ angular.module('module.home').config(function($stateProvider, $urlRouterProvider
     }).state('home.sports', {
         url: '/sports',
         templateUrl: VIEW._modules('home/sports.glimpse')
+
+    })
+    .state('home.dashboard', {
+        url: '/dashboard',
+        views:{
+          'content@home': {
+              templateUrl: VIEW._modules('home/home.dashboard')
+          }
+        }
+
 
     })
 });

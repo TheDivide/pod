@@ -9,7 +9,6 @@ php:
   - nightly
 install:
   - composer install
-  - npm install
 after_script:
   - cp .env.example .env
   - php artisan key:generate

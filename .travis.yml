@@ -7,4 +7,9 @@ php:
   - '7.1'
   - hhvm
   - nightly
-install: composer install
+install:
+  - composer install
+  - npm install
+after_script:
+  - cp .env.example .env
+  - php artisan key:generate

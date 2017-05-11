@@ -1,4 +1,5 @@
-#laravel_angular
+[![Build Status](https://travis-ci.org/RufusMbugua/pod.svg?branch=master)](https://travis-ci.org/RufusMbugua/pod)
+#Property Owner's Democracy
 
 ## Brief
 Laravel Angular startup. These include:

@@ -14,3 +14,6 @@
 Route::get('/', function () {
     return view('index');
 });
+
+Route::post('login', 'Auth\AuthenticateController@login');
+Route::get('logout', 'Auth\AuthenticateController@logout');

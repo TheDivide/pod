@@ -1,4 +1,8 @@
-#laravel_angular
+[![Build Status](https://travis-ci.org/TheDivide/pod.svg?branch=master)](https://travis-ci.org/RufusMbugua/pod)
+[![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/)
+[![MIT Licence](https://badges.frapsoft.com/os/mit/mit.svg?v=103)](https://opensource.org/licenses/mit-license.php)
+
+# Property Owner's Democracy
 
 ## Brief
 Laravel Angular startup. These include:
@@ -13,4 +17,4 @@ Laravel Angular startup. These include:
 For Testing purposes, we are running MYSQL (5.6.\*) with a provision to migrate to PostgreSQL (9.\*).
 
 ## Testing
-Coming soon
+PHP Unit Tests are running on Travis CI. See the badge above.

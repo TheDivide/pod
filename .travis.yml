@@ -9,6 +9,6 @@ php:
   - nightly
 install:
   - composer install
-before_install:
+after_install:
   - cp .env.example .env
   - php artisan key:generate

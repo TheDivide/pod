@@ -2,8 +2,10 @@
 
 use Illuminate\Database\Seeder;
 use Illuminate\Database\Eloquent\Model;
+use App\User;
 
-use Faker\Factory as Faker;
+use App\Role;
+use App\Permission;
 
 class UsersTableSeeder extends Seeder
 {
@@ -14,16 +16,29 @@ class UsersTableSeeder extends Seeder
      */
     public function run()
     {
-        $faker = Faker::create();
-        foreach (range(1,10) as $index) {
-            DB::table('users')->insert([
-                'fname' => $faker->name,
-                'lname' => $faker->name,
-                'phone' => $faker->phoneNumber,
-                'email' => $faker->unique()->safeEmail,
-                'username' => $faker->unique()->safeEmail,
-                'password' => bcrypt('secret'),
-            ]);
+        Model::unguard();
+
+        DB::table('users')->delete();
+
+        $users = array(
+
+            ['fname' => 'Master','lname' => 'Yoda', 'phone' => '+254720123123','email' => 'yoda@mail.com','username' => 'yoda@mail.com','password' => bcrypt('secretitis')]
+
+        );
+
+        foreach ($users as $user)
+        {
+            User::create($user);
+
         }
+
+        $role = Role::where('name', '=', 'admin')->firstOrFail();
+
+
+        $roleuser = User::where('email', '=', 'yoda@mail.com')->firstOrFail();
+
+// role attach alias
+        $roleuser->attachRole($role);
+
     }
 }

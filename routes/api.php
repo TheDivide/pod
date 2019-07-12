@@ -43,5 +43,7 @@ Route::group(['namespace' => 'Auth', 'middleware' => 'api', 'prefix' => 'passwor
 Route::group(['prefix' => 'v1','middleware' => 'auth:api'], function () {
 
     Route::apiResource('users', 'UserController');
+    Route::apiResource('properties', 'PropertiesController');
+   
    
 });
